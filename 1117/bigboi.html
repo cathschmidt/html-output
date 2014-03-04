@@ -1,0 +1,123 @@
+<html>
+
+<head>
+	<title>Big Boi</title>
+	<meta charset="utf-8"> 
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script>
+
+	$(document).ready( function() {
+
+	$(document).scroll(function() {
+
+			var scrollTop = $(document).scrollTop();
+			var h1 = (scrollTop * 3);
+			var h2 = (scrollTop * 10);
+			var h3 = (scrollTop * -.2);
+			var div = (scrollTop * .5);
+			var p = (-scrollTop)
+
+			$("#samosa").css("top", (1000 + h3) + "px");
+		});
+
+
+	 });
+
+	</script>
+
+	<style>
+
+			body {
+				background-color: white;
+				font-family: "Century", serif;
+				text-align: center;
+				overflow-x:hidden;
+				overflow-y:scroll;
+			}
+
+			h1 {
+				color: limegreen;
+				opacity:.5;
+				font-size: 30000%;
+				margin-top: -200%;
+				text-shadow: 4px 4px 30px mediumseagreen;
+			}
+
+			#two {
+				position: fixed;
+				color: mediumseagreen;
+				top: -800px;
+				left: -400px;
+				text-shadow: 35px 108px 30px mediumseagreen;
+			}
+
+			#three {
+				position: absolute;
+				color: lightcyan;
+				top: -400px;
+				right: -40px;
+				text-shadow: 35px 108px 30px mediumseagreen;
+			}
+
+			p {
+				font-family: "ITF Devanagari";
+				font-weight: bold;
+				position: absolute;
+				top: 1000px;
+				right:500px;
+				color: coral;
+				text-shadow: 0px 0px 4px white;
+				opacity: .8;
+			}
+
+			div {
+				width: 500px;
+				height: 500px;
+				-webkit-transform: skew(10deg, 30deg);
+				border:1px solid crimson;
+			}
+
+
+	</style>
+
+</head>
+<body>
+
+	<h1>g
+
+		<h1 id="two">g
+
+			<h1 id="three">c</h1>
+
+		</h1>
+
+
+	</h1>
+
+	<p id="samosa">सामोसा</p>
+
+	<div>
+
+		<div>
+
+			<div>
+
+				<div>
+
+					<div></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>

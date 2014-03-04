@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	<title>Type Skew</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script>
+
+	$(document).ready( function() {
+
+	$(document).scroll(function() {
+
+			var scrollTop = $(document).scrollTop();
+			var h1 = (scrollTop * 3);
+			var h2 = (scrollTop * 10);
+			var h3 = (scrollTop * -.2);
+			var div = (scrollTop * .5);
+			var p = (-scrollTop)
+
+
+			$("h1").css("font-size", h1 + "px");
+			$("h2").css("margin-top", h2 + "px");
+			$("h2").css("-webkit-transform", "skew(" + h3 + "deg," + h1 + "deg)");
+			$("p").css("-webkit-transform", "skew(0deg," + div + "deg)");
+			$("p").css("top", p + "px")
+
+
+		}); 
+
+
+	 });
+
+	</script>
+
+	<style>
+
+		body {
+			background-color: white;
+			font-family: "Avenir Next", serif;
+			text-align: center;
+			width: 100%;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			min-height: 1000px;
+		}
+
+		h1 {
+			color: limegreen;
+			opacity:.5;
+			font-size: 1000%;
+			position: fixed;
+			-webkit-transform: skew(20deg, 15deg);
+			margin-left: 20%;
+		}
+
+		h2 {
+			opacity:.8;
+			color: salmon;
+			font-size: 300%;
+			-webkit-transform: skew(80deg, 80deg);
+			margin: 50px;
+		}
+
+		p {
+			color:cyan;
+			font-family: "Century";
+			font-size: 15px;
+			line-height: 30px;
+			position: fixed;
+			text-align: left;
+			width: 300px;
+			margin-left: 25%;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<p>The sale of audiobooks has skyrocketed in recent years. In 2012, total industry sales in the book business fell just under 1 percent over all, but those of downloadable audiobooks rose by more than 20 percent. That year, 13,255 titles came out as audiobooks, compared with 4,602 in 2009. Publishers seem to be paying more attention to their production. When Simon and Schuster published Colm Toibin’s “Testament of Mary” last autumn, the narrator was Meryl Streep.</p>
+
+<p>We tend to regard reading with our eyes as more serious, more highbrow, than hearing a book read out loud. Listening to a written text harkens back to childhood, when we couldn’t read it ourselves, or a time when our parents left off reading the chapter out loud in the middle, a nudge that we’d use our school-taught skills to finish it off by ourselves.</p>
+
+<p>The great linguist Ferdinand de Saussure thought we treated writing as more important than speaking because writing is visual. Speech is ephemeral — you hear a word, and then it is gone. The word written down remains, and so we attach more significance to it. Saussure wrote that when we imagined text as more important than speech, it was as if we thought we would learn more about someone from his photograph than from his face.</p>
+
+	<h1>hello!</h1>
+
+	<h2>world!</h2>
+
+</body>
+
+</html>

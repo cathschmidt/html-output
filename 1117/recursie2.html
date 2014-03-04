@@ -1,0 +1,196 @@
+<html>
+
+<head>
+	<title>Recursie</title>
+	<meta charset="utf-8"> 
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script>
+
+	$(document).ready( function() {
+
+	$(document).scroll(function() {
+
+			var scrollTop = $(document).scrollTop();
+			var h1 = (scrollTop * 3);
+			var h2 = (scrollTop * 10);
+			var h3 = (scrollTop * -.2);
+			var div = (scrollTop * .5);
+			var p = (-scrollTop)
+
+			$("#howdy > div").css("margin-top", div + "px");
+		});
+
+
+	 });
+
+	</script>
+
+	<style>
+
+			body {
+				background: -webkit-linear-gradient(top, orange, darkorange) fixed;
+				background-position: center;
+				background-size: cover;
+				font-family: "CentSchbook Mono BT", sans-serif;
+				text-align: center;
+				overflow-x:hidden;
+				overflow-y:scroll;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				height: 1000px;
+			}
+
+			div {
+				font-size: 100px;
+			}
+
+			
+			#hey div {
+				z-index: 10;
+				width: 24px;
+				height: 157px;
+				-webkit-transform: skew(0deg, -15deg);
+				border:50px solid yellow;
+				margin: -53%;
+				margin-left: 100px;
+				margin-top: -10px;
+				font-size: 100%;
+				color: white;
+				font-weight: bold;
+				background: -webkit-linear-gradient(60deg, palegreen, paleturquoise);
+				/* box-shadow: 100px 100px 100px purple; */
+			}
+
+			#hi div {
+				z-index: 0;
+				width: 300px;
+				height: 300px;
+				-webkit-transform: skew(-15deg, 15deg);
+				border:0px solid crimson;
+				margin: 10%;
+				margin-left: 100px;
+				margin-top: 100px;
+				font-size: 75%;
+				color: navy;
+				font-weight: bold;
+				background: -webkit-linear-gradient(60deg, red, crimson);
+				/* box-shadow: 100px 100px 100px purple; */
+			}
+
+			#howdy div {
+				position: fixed;
+				z-index: 1;
+				-webkit-transform: rotate(180deg);
+				width: 1000px;
+				height: 800px;
+				-webkit-transform: skew(-76deg, 7deg);
+				border:10px solid cyan;
+				font-size: 10%;
+				color: purple;
+				text-shadow: 2px 2px 3px aqua;
+				font-weight: bold;
+				
+			}
+
+
+	</style>
+
+</head>
+<body>
+
+<div id="hi">	
+
+	<div>
+			hello
+		<div>
+				world
+			<div>
+					hello
+				<div>
+						world
+					<div>	
+							hello
+						<div>
+								world
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="howdy">	
+
+	<div>
+			hello
+		<div>
+				world
+			<div>
+					hello
+				<div>
+						world
+					<div>	
+							hello
+						<div>
+								world
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="hey">	
+
+	<div>
+			hello
+		<div>
+				world
+			<div>
+					hello
+				<div>
+						world
+					<div>	
+							hello
+						<div>
+								world
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
